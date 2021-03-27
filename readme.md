@@ -28,5 +28,7 @@ git clone https://github.com/adonis-on-github/js-fullstack-assignment-02.git
     npm start
 ```
 
+Wait for compilation
+
 * Open the browser and navigate to http://localhost:3000
 
