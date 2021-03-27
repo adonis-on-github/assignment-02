@@ -1,0 +1,31 @@
+{
+  "name": "assingment-02",
+  "version": "1.0.0",
+  "description": "js full stack internship second assignment",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npx rimraf public/assets",
+    "purge": "npx rimraf node_modules",
+    "dev": "npm run clean && npm run watch",
+    "start": "vite serve public",
+    "watch": "npx mix watch"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "tailwindcss",
+    "javascript"
+  ],
+  "author": "Adonis",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.13",
+    "postcss-cli": "^8.3.1",
+    "vite": "^2.1.3"
+  }
+}
