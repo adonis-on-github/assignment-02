@@ -1,6 +1,6 @@
-# Top Interns Assignment 01
+# Top Interns Assignment 02
 
-This repository contains sources for assingment 01
+This repository contains sources for assingment 02
 
 ## Requirements
 It is necessary to have [nodejs] (https://nodejs.org/en/
