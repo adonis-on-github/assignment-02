@@ -14,12 +14,13 @@ class Popup {
         });
 
         this.ok.addEventListener("click", () => {
-            if (!this.name.value) {
+            const result = this.name.value.trim();
+
+            if (!result) {
                 this.name.focus();
                 return;
             }
 
-            const result = this.name.value;
             this.name.value = "";
 
             this.display(false);
