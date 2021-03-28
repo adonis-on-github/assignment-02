@@ -1,7 +1,10 @@
 "use strict";
 
 import Template from './Template';
-const template = new Template("#category");
+import dialog from './Dialog';
+
+const categoryTemplate = new Template("#category");
+const taskTemplate = new Template("#task");
 
 class Category {
 
@@ -10,19 +13,21 @@ class Category {
         this.bgColor = bgColor;
         this.deleteCb = deleteCb;
 
-        this.content = template.clone();
+        this.content = categoryTemplate.clone();
         this.content.classList.add(this.bgColor);
         this.content.querySelector(".title").textContent = title;
 
         this.tasks = this.content.querySelector(".items");
 
         this.btn = this.content.querySelector(".action");
-        this.btn.addEventListener("click", this.onAddTask.bind(this));
+        this.btn.addEventListener("click", () => dialog(this.title, name => this.addTask(name)));
     }
 
-    onAddTask() {
-        console.log(`add task to ${this.title}`);
-    };
+    addTask(name) {
+        const task = taskTemplate.clone();
+        task.textContent = name;
+        this.tasks.appendChild(task);
+    }
 
     onDelete() {
         this.btn.removeEventListener("click", this.onAddTask);
