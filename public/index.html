@@ -16,7 +16,7 @@
 
             <div class="flex flex-col space-y-2 items"></div>
 
-            <button class="mt-5 font-bold text-gray-500 focus:outline-none hover:text-gray-700 action">
+            <button class="self-center inline-block px-6 py-3 mt-5 font-bold text-gray-500 rounded-lg focus:outline-none hover:text-gray-700 hover:bg-gray-100 action place-self-auto">
                 + Add Task
             </button>
         </div>
@@ -24,7 +24,7 @@
 
     <!-- task template -->
     <template id="task">
-        <div class="h-20 px-6 py-3 bg-white rounded"></div>
+        <div class="px-6 py-3 bg-white rounded"></div>
     </template>
 
     <!-- project template -->
@@ -51,15 +51,15 @@
             <!-- category -->
             <div class="px-6">
                 <label for="catName">In</label>
-                <input class="p-2 text-gray-700 border border-gray-300 rounded w-28 focus:outline-none" type="text" readonly id="catName" name="category" value="In progress">
+                <input class="p-2 text-gray-700 border border-gray-300 rounded category w-28 focus:outline-none" type="text" readonly id="catName" name="category" value="In progress">
             </div>
 
             <!-- name -->
             <div class="px-6">
-                <input class="text-4xl focus:outline-none" type="text" placeholder="Task Name">
+                <input class="text-4xl focus:outline-none name" type="text" placeholder="Task Name">
             </div>
 
-            <button class="self-end px-6 py-3 mr-4 text-xl font-semibold text-white bg-indigo-600 rounded-md shadow-lg hover:bg-indigo-500 focus:outline-none">Create Task</button>
+            <button class="self-end px-6 py-3 mr-4 text-xl font-semibold text-white bg-indigo-600 rounded-md shadow-lg hover:bg-indigo-500 focus:outline-none confirm">Create Task</button>
         </div>
 
     </div>
