@@ -37,6 +37,10 @@ class Popup {
         }
     };
 
+    set category(value) {
+        this.categoryName.value = value
+    }
+
     init(category, cb) {
         this.category = category;
         this.cb = cb;
